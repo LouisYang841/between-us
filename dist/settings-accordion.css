@@ -1,0 +1,19 @@
+/* 设置页大分类收放 */
+#settings-view .settings-section { padding: 0; }
+#settings-view .settings-section h2 { margin: 0; }
+.settings-fold {
+  width: 100%; display: grid; grid-template-columns: auto 1fr auto; grid-template-rows: auto auto; align-items: center;
+  column-gap: 12px; row-gap: 3px; padding: 18px 0 16px; background: none; border: 0; color: inherit; font: inherit; text-align: left; cursor: pointer;
+}
+.settings-fold > span:first-child { grid-row: 1 / 3; align-self: start; }
+.settings-fold .fold-hint { grid-column: 2; grid-row: 2; font-size: max(8px, .72em); letter-spacing: .08em; color: var(--frame, #8c908e); font-weight: 400; transition: opacity .25s; }
+.is-open .settings-fold .fold-hint { opacity: 0; }
+.fold-mark { grid-column: 3; grid-row: 1 / 3; position: relative; width: 22px; height: 22px; border: .8px solid var(--ink, #242522); border-radius: 50%; }
+.fold-mark::before, .fold-mark::after { content: ''; position: absolute; left: 50%; top: 50%; width: 9px; height: .9px; background: var(--ink, #242522); transform: translate(-50%, -50%); transition: transform .3s var(--ease, ease); }
+.fold-mark::after { transform: translate(-50%, -50%) rotate(90deg); }
+.is-open .fold-mark { border-color: var(--blue, #1834d4); }
+.is-open .fold-mark::before, .is-open .fold-mark::after { background: var(--blue, #1834d4); }
+.is-open .fold-mark::after { transform: translate(-50%, -50%) rotate(0deg); }
+.settings-body { overflow: hidden; border-left: .8px solid var(--blue, #1834d4); margin-left: 3px; padding-left: 14px; }
+.is-open .settings-body { padding-bottom: 22px; }
+.settings-section:not(.is-open) .settings-body { border-left-color: transparent; }

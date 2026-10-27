@@ -1,0 +1,61 @@
+/* Cross-page finish pass: same paper, readable primary controls, quiet secondary ink. */
+:root{--muted:#697176;--guide:#b5babe;--frame:#929a9f;--faint-blue:#bdc5da;--collision:#e43166;--field-border:#a7aeb2}
+html{scroll-padding-bottom:calc(var(--nav-height) + 20px)}
+button,label,select,input[type=range]{touch-action:manipulation}
+input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+dialog{overscroll-behavior:contain;max-height:calc(100svh - 24px);overflow-y:auto}
+input,textarea{accent-color:var(--blue)}
+.skip-link{position:fixed;left:16px;top:-60px;background:var(--paper);border:1px solid var(--blue);color:var(--blue);padding:10px 14px;z-index:1100;font-size:max(8px, round(nearest, calc((13px) * var(--type-scale, 1)), 4px))}
+.skip-link:focus{top:12px}
+.masthead h1{font-size:max(8px, round(nearest, calc((clamp(22px,6.1cqw,28px)) * var(--type-scale, 1)), 4px))}
+.specimen h2{font-size:max(8px, round(nearest, calc((clamp(15px,4.1cqw,19px)) * var(--type-scale, 1)), 4px))}
+.caption{font-size:max(8px, round(nearest, calc((clamp(11px,3.05cqw,14px)) * var(--type-scale, 1)), 4px));line-height:1.35}
+.module-enter{min-height:27px;gap:4px}.module-enter:after{inset:-5px -4px}
+.categories{gap:4px;width:17%;right:5.5%;top:12.1%}
+.categories button{font-size:max(8px, round(nearest, calc((clamp(9px,2.6cqw,12px)) * var(--type-scale, 1)), 4px));min-height:21px;padding:3px 11px 3px 7px}
+.categories button:after{inset:-1px -3px}
+.quote,.middle-note,.vertical-note{font-size:max(8px, round(nearest, calc((clamp(7.5px,1.9cqw,9px)) * var(--type-scale, 1)), 4px))}
+.signal-note{left:89.8%;width:9.3%;font-size:max(8px, round(nearest, calc((clamp(6.5px,1.7cqw,8px)) * var(--type-scale, 1)), 4px))}
+.signal-note em{font-size:max(8px, round(nearest, calc((clamp(7px,1.75cqw,8px)) * var(--type-scale, 1)), 4px));transform:none;overflow-wrap:normal}
+.echo-note{left:93%;width:6.7%;font-size:max(8px, round(nearest, calc((clamp(6.5px,1.65cqw,8px)) * var(--type-scale, 1)), 4px))}
+.blue-note{font-size:max(8px, round(nearest, calc((clamp(8px,2.1cqw,10px)) * var(--type-scale, 1)), 4px))}
+.listening{left:75.5%;width:18.8%;font-size:max(8px, round(nearest, calc((clamp(7.5px,2.05cqw,9px)) * var(--type-scale, 1)), 4px));padding:5px 7px;min-height:23px}
+.listening i{width:3px;height:3px;margin-left:4px}.listening:after{inset:-8px -3px}
+.specimen-field:hover .art{transform:none}
+.feature-page,.settings-page{padding-left:24px;padding-right:24px}
+.feature-header h1{font-size:max(8px, round(nearest, calc((clamp(27px,7.4cqw,32px)) * var(--type-scale, 1)), 4px));margin-top:20px;line-height:1.08;text-wrap:balance}
+.feature-header>p{font-size:max(8px, round(nearest, calc((14px) * var(--type-scale, 1)), 4px))}
+.feature-subtitle{font-size:max(8px, round(nearest, calc((11px) * var(--type-scale, 1)), 4px));color:var(--muted);margin:15px 0 18px;max-width:31ch}
+.music-disc-stage{height:192px;margin:0 0 8px}
+.music-track-title{font-size:max(8px, round(nearest, calc((21px) * var(--type-scale, 1)), 4px));line-height:1.3;overflow-wrap:anywhere}
+.music-track-sub{color:var(--muted);line-height:1.6}
+.music-controls{margin:13px 0 15px}.music-controls button{min-width:44px;min-height:44px}
+.music-import{gap:12px;align-items:flex-start}.music-import label{min-height:38px}.music-import small{padding-top:11px;white-space:nowrap}
+.volume-row{margin-bottom:15px;justify-content:space-between}.volume-row input{width:46%}
+.feature-status,.section-note,.control-row p,.offline,.settings-colophon,.feature-label,.music-track-sub,.music-times,.connection-state small,.profile-status,.composer-caption,.message-meta,.reading-preview>span,.reading-preview time,.profile-setting-link small{color:var(--muted)}
+.feature-actions>button,.memory-tools button,.letter-intro button,.data-actions button,.data-actions label,.care-action,.replay-intro{min-height:40px}
+.feature-field{border-bottom-color:var(--field-border)}
+.memory-list{padding-left:18px}.memory-card time{color:var(--muted)}.memory-card footer{gap:20px}.memory-card footer button{min-height:30px}
+.memory-card h2{overflow-wrap:anywhere}.memory-card p{line-height:1.9}
+.album-item span,.sealed-letter strong{overflow-wrap:anywhere;line-height:1.5}
+.album-grid{gap:29px 18px}.album-item:nth-child(2n){margin-top:25px}
+.letter-form{padding-right:12px}.letter-form textarea{min-height:195px}.letter-stamp{gap:14px}
+.letter-stamp span{line-height:1.5}.letter-stamp button{white-space:nowrap;min-height:40px}
+.chat-page .icon-button{position:relative}.chat-page .icon-button:after{content:'';position:absolute;inset:-3px}
+.chat-page .chat-back{position:absolute}
+.message-content{min-width:0}.message-bubble{box-shadow:none;line-height:1.7}.message-more{min-height:24px}
+.search-box{height:38px}.search-box input{font-size:max(8px, round(nearest, calc((13px) * var(--type-scale, 1)), 4px))}
+.composer-rail textarea{font-size:max(8px, round(nearest, calc((14px) * var(--type-scale, 1)), 4px))}.composer-caption{line-height:1.5;min-height:20px}
+.reading-preview{border-color:var(--guide)}.preview-bubble{border-color:#bcc5db;background:#e8ebf3}
+.settings-section>h2{font-size:max(8px, round(nearest, calc((14px) * var(--type-scale, 1)), 4px));line-height:1.5}.control-row{margin:16px 0}
+.control-row select{background:var(--paper);border-color:var(--field-border);max-width:54%;min-height:35px}
+.toggle{position:relative}.toggle:after{content:'';position:absolute;inset:-9px -3px}
+.settings-details summary{min-height:40px;padding-top:12px}
+.settings-details summary:after{color:var(--muted)}
+.photo-caption-form input{border-bottom-color:var(--field-border)}
+.photo-dialog-top button,.photo-navigation button{min-height:40px}
+.form-footer,.feature-actions,.data-actions,.confirm-actions{flex-wrap:wrap}
+.profile-person input{min-width:0}.profile-save{min-height:44px}
+@media(max-width:350px){.feature-page,.settings-page{padding-left:20px;padding-right:20px}.feature-header h1{font-size:max(8px, round(nearest, calc((27px) * var(--type-scale, 1)), 4px))}.music-disc-stage{height:177px}.signal-note{left:89.2%;width:10%}.categories{right:5%;width:18%}}
+@supports(-webkit-touch-callout:none){input:not([type=range]):not([type=file]),textarea,select,.composer-rail textarea{font-size:max(8px, round(nearest, calc((16px) * var(--type-scale, 1)), 4px))}}
+@media(prefers-reduced-motion:reduce){.feature-transition{display:none}.layer,.art,.message,.view{transition:none!important;animation:none!important}}

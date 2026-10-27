@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 764" fill="none">
+ <title>BETWEEN US — background flow, separate editable paths</title>
+ <g stroke="#aeb2b2" stroke-width=".65" stroke-linecap="round">
+  <path id="top-solid" d="M343 207C331 154 271 131 207 151C147 170 117 209 126 260"/>
+  <path id="top-dash" d="M127 270C133 293 152 317 174 328" stroke-dasharray="2.3 3.8"/>
+  <path id="middle-solid" d="M207 346C242 362 304 363 338 391C374 419 383 455 365 481"/>
+  <path id="middle-dash" d="M357 490C349 501 336 509 322 513" stroke-dasharray="2.3 3.8"/>
+  <path id="bottom-solid" d="M310 608C281 605 256 626 256 653C256 685 280 704 309 702"/>
+  <path id="bottom-dash" d="M319 700C334 696 346 688 353 676" stroke-dasharray="2.3 3.8"/>
+ </g>
+ <g stroke="#aeb9d8" stroke-width=".65" stroke-linecap="round">
+  <path id="top-accent" d="M207 151C190 157 175 164 162 174"/>
+  <path id="bottom-accent" d="M266 624C278 613 294 607 310 608"/>
+ </g>
+</svg>
