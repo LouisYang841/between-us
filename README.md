@@ -16,6 +16,12 @@ node server.mjs
 
 打开 `http://127.0.0.1:4173/#home`。建议用手机或浏览器的手机尺寸模拟（390 × 844 左右）。
 
+## 部署到 GitHub Pages
+
+仓库已包含 `.github/workflows/pages.yml`。将 `main` 分支推送到 GitHub 后，Actions 会直接发布 `dist/` 到 GitHub Pages；也可以在 Actions 页面手动运行 `Deploy to GitHub Pages`。
+
+首次部署前，在仓库的 **Settings → Pages → Build and deployment** 中将 **Source** 设为 **GitHub Actions**。部署完成后，页面地址通常为 `https://LouisYang841.github.io/between-us/`。
+
 ## 有什么
 
 | 页面 | 地址 | 内容 |
